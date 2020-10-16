@@ -1,0 +1,11 @@
+<launch>
+    <node pkg="fifth_prop" type="prop.py" name="fifthprop" output="screen">
+
+    </node>
+
+    <node name="serial_node"	pkg="rosserial_arduino"		type="serial_node.py">
+        <param name="port" value ="/dev/ttyUSB0"/>
+        <param name="baud" value ="57600"/>
+    </node>
+</launch>
+
